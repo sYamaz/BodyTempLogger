@@ -1,16 +1,15 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    let repo:HealthCareRepositoryDelegate
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TapInputView(repo: repo)
     }
 }
-
+                                    
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(repo: PreviewHealthCareRepository())
     }
 }

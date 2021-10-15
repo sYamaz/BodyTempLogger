@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */; };
+		5F4242A32715AF0D00AB464A /* HealthCareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */; };
+		5F4242A52715B7FE00AB464A /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */; };
+		5F4242A62715B7FE00AB464A /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */; };
+		5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A72715B8DF00AB464A /* TapInputView.swift */; };
+		5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A72715B8DF00AB464A /* TapInputView.swift */; };
+		5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
+		5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
+		5F7011AB271707760043B95C /* ButtonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7011AA271707760043B95C /* ButtonGridView.swift */; };
+		5F7011AC271707760043B95C /* ButtonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7011AA271707760043B95C /* ButtonGridView.swift */; };
 		5FAC63222712E8120059A726 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63212712E8120059A726 /* Tests_iOS.swift */; };
 		5FAC63242712E8120059A726 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63232712E8120059A726 /* Tests_iOSLaunchTests.swift */; };
 		5FAC632E2712E8120059A726 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC632D2712E8120059A726 /* Tests_macOS.swift */; };
@@ -17,6 +27,7 @@
 		5FAC63342712E8120059A726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC630A2712E80B0059A726 /* ContentView.swift */; };
 		5FAC63352712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
 		5FAC63362712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
+		5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC63482712EB330059A726 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareRepository.swift; sourceTree = "<group>"; };
+		5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputView.swift; sourceTree = "<group>"; };
+		5F4242A72715B8DF00AB464A /* TapInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapInputView.swift; sourceTree = "<group>"; };
+		5F4242AA2715B8FF00AB464A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		5F7011AA271707760043B95C /* ButtonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGridView.swift; sourceTree = "<group>"; };
 		5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTempLoggerApp.swift; sourceTree = "<group>"; };
 		5FAC630A2712E80B0059A726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FAC630B2712E8110059A726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,10 @@
 		5FAC63292712E8120059A726 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAC632D2712E8120059A726 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5FAC632F2712E8120059A726 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		5FAC63452712E89B0059A726 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5FAC63462712EB320059A726 /* BodyTempLogger (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BodyTempLogger (iOS).entitlements"; sourceTree = "<group>"; };
+		5FAC63482712EB330059A726 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BodyTempLogger--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +107,15 @@
 		5FAC63032712E80A0059A726 = {
 			isa = PBXGroup;
 			children = (
+				5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */,
+				5FAC63462712EB320059A726 /* BodyTempLogger (iOS).entitlements */,
+				5FAC63452712E89B0059A726 /* README.md */,
 				5FAC63082712E80B0059A726 /* Shared */,
 				5FAC63172712E8120059A726 /* macOS */,
 				5FAC63202712E8120059A726 /* Tests iOS */,
 				5FAC632C2712E8120059A726 /* Tests macOS */,
 				5FAC63112712E8120059A726 /* Products */,
+				5FAC63472712EB330059A726 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */,
+				5F4242A72715B8DF00AB464A /* TapInputView.swift */,
+				5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */,
+				5F4242AA2715B8FF00AB464A /* PostView.swift */,
+				5F7011AA271707760043B95C /* ButtonGridView.swift */,
+				5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */,
 				5FAC630A2712E80B0059A726 /* ContentView.swift */,
 				5FAC630B2712E8110059A726 /* Assets.xcassets */,
 			);
@@ -139,6 +169,14 @@
 				5FAC632F2712E8120059A726 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5FAC63472712EB330059A726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FAC63482712EB330059A726 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
 				5FAC63332712E8120059A726 /* ContentView.swift in Sources */,
+				5F4242A52715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
+				5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */,
+				5F7011AB271707760043B95C /* ButtonGridView.swift in Sources */,
+				5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */,
 				5FAC63312712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4242A32715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
 				5FAC63342712E8120059A726 /* ContentView.swift in Sources */,
+				5F4242A62715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
+				5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */,
+				5F7011AC271707760043B95C /* ButtonGridView.swift in Sources */,
+				5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */,
 				5FAC63322712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,11 +511,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BodyTempLogger (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQT3P76FPL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BodyTempLogger--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ここに体温データを書き込むことに関するメッセージを追加する";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,11 +545,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BodyTempLogger (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQT3P76FPL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BodyTempLogger--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ここに体温データを書き込むことに関するメッセージを追加する";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
