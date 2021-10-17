@@ -3,7 +3,6 @@
 import SwiftUI
 import Combine
 struct TapInputView: View {
-    let uppers = [35, 36, 37, 38]
     @State var error:Error? = nil
     
     @State var degree:Double = 0
@@ -36,7 +35,7 @@ struct TapInputView: View {
                 VStack(alignment: .center, spacing: nil){
                     HStack(alignment: .center, spacing: nil){
                         Spacer()
-                        Button("Setting"){
+                        Button("設定"){
                             settingMode = true
                         }.sheet(isPresented: $settingMode, onDismiss:{}, content: {
                             VStack(alignment:.center, spacing: nil){
@@ -57,15 +56,16 @@ struct TapInputView: View {
                     }.font(Font.system(size: 80))
                     // 入力ボタン
                     HStack(alignment: .top, spacing: commonSpacing){
-                        let col0 = [35, 36, 37, 38]
+                        var col0 = [35, 36, 37, 38]
                         let col1 = [7, 4, 1]
                         let col2 = [8, 5, 2, 0]
                         let col3 = [9, 6, 3]
                         VStack(alignment: .center, spacing: commonSpacing ){
                             ForEach(col0.indices){i in
-                                let label = "\(col0[i])"
+                                let val = col0[i] + (offset ? 1 : 0)
+                                let label = "\(val)"
                                 Button(label){
-                                    self.upperVal = col0[i]
+                                    self.upperVal = val
                                 }
                                 .frame(width: colWidth, height: rowHeight)
                                 .background(upperBackColor)
