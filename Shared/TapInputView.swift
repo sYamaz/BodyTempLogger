@@ -56,7 +56,7 @@ struct TapInputView: View {
                     }.font(Font.system(size: 80))
                     // 入力ボタン
                     HStack(alignment: .top, spacing: commonSpacing){
-                        var col0 = [35, 36, 37, 38]
+                        let col0 = [35, 36, 37, 38]
                         let col1 = [7, 4, 1]
                         let col2 = [8, 5, 2, 0]
                         let col3 = [9, 6, 3]
