@@ -47,13 +47,10 @@ struct TapInputView: View {
                     }
                     Spacer()
                     // 表示
-                    HStack(alignment: .firstTextBaseline, spacing: commonSpacing){
-                        Text("\(upperVal).")
-                            .foregroundColor(upperThemeColor)
-                        Text("\(lowerVal)")
-                            .foregroundColor(lowerThemeColor)
-                        Text("℃").font(Font.system(size: 48))
-                    }.font(Font.system(size: 80))
+                    DisplayView(upperVal: upperVal, lowerVal: lowerVal)
+                        .upperColor(upperThemeColor)
+                        .lowerColor(lowerThemeColor)
+                    
                     // 入力ボタン
                     HStack(alignment: .top, spacing: commonSpacing){
                         let col0 = [35, 36, 37, 38]
