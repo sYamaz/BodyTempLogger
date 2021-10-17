@@ -4,51 +4,145 @@ import SwiftUI
 import Combine
 struct TapInputView: View {
     let uppers = [35, 36, 37, 38]
+    @State var error:Error? = nil
+    
     @State var degree:Double = 0
     @State var lowerVal:Int = 0
     @State var upperVal:Int = 36
+    @State var settingMode:Bool = false
+    
+    @State var offset:Bool = false
     
     let repo:HealthCareRepositoryDelegate
     
     var body: some View {
-        let upperColor = Color.red
-        let lowerColor = Color.blue
-        VStack(alignment: .center, spacing: nil){
-            Spacer()
-            HStack(alignment: .firstTextBaseline, spacing: 0){
-                Text("\(upperVal).")
-                    .foregroundColor(upperColor)
-                Text("\(lowerVal)")
-                    .foregroundColor(lowerColor)
-            }.font(.title)
-
+        let upperThemeColor = Color.red
+        let lowerThemeColor = Color.blue
+        
+        let upperForeColor = upperThemeColor
+        let lowerForeColor = lowerThemeColor
+        let upperBackColor = Color.init(white: 0.85)
+        let lowerBackColor = Color.init(white: 0.85)
+        
+        let commonSpacing:CGFloat = 4
+        let commonRadius:CGFloat = 16
+        ZStack(alignment: .top){
             GeometryReader{g in
-                HStack(alignment: .center, spacing: 0){
-                    ButtonGridView<Int>(val: $upperVal, cols: [.init(items: uppers)])
-                        .foregroundColor(upperColor)
-                        .frame(width: g.size.width * 0.33)
-                    ButtonGridView<Int>(val: $lowerVal, cols: [
-                        .init(items: [7,4,1]),
-                        .init(items: [8,5,2,0]),
-                        .init(items: [9,6,3])
-                    ])
-                        .foregroundColor(lowerColor)
-                        .frame(width: g.size.width * 0.67)
+                let width = g.size.width
+                let colWidth = width * 0.25
+                let rowHeight = colWidth
+                
+                
+                VStack(alignment: .center, spacing: nil){
+                    HStack(alignment: .center, spacing: nil){
+                        Spacer()
+                        Button("Setting"){
+                            settingMode = true
+                        }.sheet(isPresented: $settingMode, onDismiss:{}, content: {
+                            VStack(alignment:.center, spacing: nil){
+                                List(){
+                                    Toggle.init("36℃~39℃にする", isOn: $offset)
+                                }
+                            }
+                        })
+                    }
+                    Spacer()
+                    // 表示
+                    HStack(alignment: .firstTextBaseline, spacing: commonSpacing){
+                        Text("\(upperVal).")
+                            .foregroundColor(upperThemeColor)
+                        Text("\(lowerVal)")
+                            .foregroundColor(lowerThemeColor)
+                        Text("℃").font(Font.system(size: 48))
+                    }.font(Font.system(size: 80))
+                    // 入力ボタン
+                    HStack(alignment: .top, spacing: commonSpacing){
+                        let col0 = [35, 36, 37, 38]
+                        let col1 = [7, 4, 1]
+                        let col2 = [8, 5, 2, 0]
+                        let col3 = [9, 6, 3]
+                        VStack(alignment: .center, spacing: commonSpacing ){
+                            ForEach(col0.indices){i in
+                                let label = "\(col0[i])"
+                                Button(label){
+                                    self.upperVal = col0[i]
+                                }
+                                .frame(width: colWidth, height: rowHeight)
+                                .background(upperBackColor)
+                                .cornerRadius(commonRadius)
+                            }
+                        }
+                        .font(Font.system(size: 24))
+                        .foregroundColor(upperForeColor)
+                        VStack(alignment: .center, spacing: commonSpacing ){
+                            ForEach(col1.indices){i in
+                                let label = "\(col1[i])"
+                                Button(label){
+                                    self.lowerVal = col1[i]
+                                }
+                                .frame(width: colWidth, height: rowHeight)
+                                .background(lowerBackColor)
+                                .cornerRadius(commonRadius)
+                            }
+                        }
+                        .font(Font.system(size:24))
+                        .foregroundColor(lowerForeColor)
+                        VStack(alignment: .center, spacing: commonSpacing ){
+                            ForEach(col2.indices){i in
+                                let label = "\(col2[i])"
+                                Button(label){
+                                    self.lowerVal = col2[i]
+                                }
+                                .frame(width: colWidth, height: rowHeight)
+                                .background(lowerBackColor)
+                                .cornerRadius(commonRadius)
+                            }
+                        }
+                        .font(Font.system(size: 24))
+                        .foregroundColor(lowerForeColor)
+                        VStack(alignment: .center, spacing: commonSpacing ){
+                            ForEach(col3.indices){i in
+                                let label = "\(col3[i])"
+                                Button(label){
+                                    self.lowerVal = col3[i]
+                                }
+                                .frame(width: colWidth, height: rowHeight)
+                                .background(lowerBackColor)
+                                .cornerRadius(commonRadius)
+                            }
+                        }
+                        .font(Font.system(size: 24))
+                        .foregroundColor(lowerForeColor)
+                    }
+                    
+                    // 登録ボタン
+                    PostView(Double(upperVal) + Double(lowerVal)/10, repo: repo){(success, error) in
+                        // completion
+                        
+                        self.error = error
+                        
+                        
+                    }
+                    .font(Font.system(size: 24))
+                    .frame(width: g.size.width * 0.66, alignment: .center)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(commonRadius)
+                    
+                }
+                
+            }.padding()
+            
+            
+            
+            VStack(alignment: .trailing, spacing: nil){
+                if let e = error {
+                    let errorTxt = "\(e)"
+                    Text(errorTxt)
+                        .padding()
                 }
             }
-            PostView(Double(upperVal) + Double(lowerVal)/10, repo: repo)
-        }.padding()
-        
-    }
-    
-    func upperButton(text:String, click:@escaping() -> Void) -> some View{
-        return Button(text){
-            click()
-        }
-    }
-    func lowerButton(text:String, click:@escaping() -> Void) -> some View{
-        return Button(text){
-            click()
         }
     }
 }
@@ -56,6 +150,7 @@ struct TapInputView: View {
 struct TapInputView_Previews: PreviewProvider {
     static var previews: some View {
         TapInputView(repo: PreviewHealthCareRepository())
+            .preferredColorScheme(.dark)
     }
 }
 

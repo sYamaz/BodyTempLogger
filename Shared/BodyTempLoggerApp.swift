@@ -9,9 +9,9 @@ struct BodyTempLoggerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(repo: appDelegate.repo)
-            
         }
     }
+    
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate {
