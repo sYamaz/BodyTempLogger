@@ -15,8 +15,6 @@
 		5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A72715B8DF00AB464A /* TapInputView.swift */; };
 		5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
 		5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
-		5F7011AB271707760043B95C /* ButtonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7011AA271707760043B95C /* ButtonGridView.swift */; };
-		5F7011AC271707760043B95C /* ButtonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7011AA271707760043B95C /* ButtonGridView.swift */; };
 		5FAC63222712E8120059A726 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63212712E8120059A726 /* Tests_iOS.swift */; };
 		5FAC63242712E8120059A726 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63232712E8120059A726 /* Tests_iOSLaunchTests.swift */; };
 		5FAC632E2712E8120059A726 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC632D2712E8120059A726 /* Tests_macOS.swift */; };
@@ -28,8 +26,6 @@
 		5FAC63352712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
 		5FAC63362712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
 		5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC63482712EB330059A726 /* HealthKit.framework */; };
-		933B35292719B8FE00432553 /* ButtonColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B35282719B8FE00432553 /* ButtonColumnView.swift */; };
-		933B352A2719B8FE00432553 /* ButtonColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933B35282719B8FE00432553 /* ButtonColumnView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +50,6 @@
 		5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputView.swift; sourceTree = "<group>"; };
 		5F4242A72715B8DF00AB464A /* TapInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapInputView.swift; sourceTree = "<group>"; };
 		5F4242AA2715B8FF00AB464A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		5F7011AA271707760043B95C /* ButtonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGridView.swift; sourceTree = "<group>"; };
 		5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTempLoggerApp.swift; sourceTree = "<group>"; };
 		5FAC630A2712E80B0059A726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FAC630B2712E8110059A726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +66,6 @@
 		5FAC63462712EB320059A726 /* BodyTempLogger (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BodyTempLogger (iOS).entitlements"; sourceTree = "<group>"; };
 		5FAC63482712EB330059A726 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BodyTempLogger--iOS--Info.plist"; sourceTree = "<group>"; };
-		933B35282719B8FE00432553 /* ButtonColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColumnView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +119,11 @@
 		5FAC63082712E80B0059A726 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				93285E50271CDBED008E7135 /* View */,
+				93285E4F271CDBBA008E7135 /* Model */,
 				5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */,
 				5F4242A72715B8DF00AB464A /* TapInputView.swift */,
 				5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */,
-				5F4242AA2715B8FF00AB464A /* PostView.swift */,
-				5F7011AA271707760043B95C /* ButtonGridView.swift */,
-				933B35282719B8FE00432553 /* ButtonColumnView.swift */,
-				5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */,
 				5FAC630A2712E80B0059A726 /* ContentView.swift */,
 				5FAC630B2712E8110059A726 /* Assets.xcassets */,
 			);
@@ -181,6 +173,22 @@
 				5FAC63482712EB330059A726 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93285E4F271CDBBA008E7135 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93285E50271CDBED008E7135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F4242AA2715B8FF00AB464A /* PostView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,9 +353,7 @@
 				5FAC63332712E8120059A726 /* ContentView.swift in Sources */,
 				5F4242A52715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
 				5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */,
-				5F7011AB271707760043B95C /* ButtonGridView.swift in Sources */,
 				5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */,
-				933B35292719B8FE00432553 /* ButtonColumnView.swift in Sources */,
 				5FAC63312712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,9 +366,7 @@
 				5FAC63342712E8120059A726 /* ContentView.swift in Sources */,
 				5F4242A62715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
 				5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */,
-				5F7011AC271707760043B95C /* ButtonGridView.swift in Sources */,
 				5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */,
-				933B352A2719B8FE00432553 /* ButtonColumnView.swift in Sources */,
 				5FAC63322712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
