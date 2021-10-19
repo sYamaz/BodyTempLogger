@@ -10,7 +10,6 @@ struct PostView: View {
     var temp:Double
     let repository:HealthCareRepositoryDelegate
     let completion:(Bool,Error?)->Void
-    
     init(_ temp:Double, repo:HealthCareRepositoryDelegate){
         self.temp = temp
         self.repository = repo
@@ -24,13 +23,16 @@ struct PostView: View {
     }
     
     var body: some View {
-        Button(text){
+        Button(action: {
             text = text2
             repository.postBodyTemperature(temp, unit: .degreeCelsius){ (success, error) in
                 completion(success, error)
                 text = text1
             }
-        }.scaledToFill()
+        }){
+            Text(text)
+                .padding()
+        }
     }
 }
 
