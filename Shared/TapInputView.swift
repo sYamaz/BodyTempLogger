@@ -11,20 +11,22 @@ struct TapInputView: View {
     @State var settingMode:Bool = false
     
     @State var offset:Bool = false
+    @State var color:Color = Color.green
     
     let repo:HealthCareRepositoryDelegate
     
     var body: some View {
-        let upperThemeColor = Color.red
-        let lowerThemeColor = Color.blue
+        let upperThemeColor = color
+        let lowerThemeColor = color.opacity(0.5)
         
         let upperForeColor = upperThemeColor
         let lowerForeColor = lowerThemeColor
         let upperBackColor = Color.init(white: 0.85)
-        let lowerBackColor = Color.init(white: 0.85)
+        let lowerBackColor = Color.init(white:0.85)
         
         let commonSpacing:CGFloat = 4
         let commonRadius:CGFloat = 16
+        
         ZStack(alignment: .top){
             GeometryReader{g in
                 let width = g.size.width
@@ -41,6 +43,7 @@ struct TapInputView: View {
                             VStack(alignment:.center, spacing: nil){
                                 List(){
                                     Toggle.init("36℃~39℃にする", isOn: $offset)
+                                    ColorPicker("テーマカラー", selection: $color)
                                 }
                             }
                         })
@@ -48,7 +51,7 @@ struct TapInputView: View {
                     Spacer()
                     // 表示
                     DisplayView(upperVal: upperVal, lowerVal: lowerVal)
-                        .upperColor(upperThemeColor)
+                        .upperColor(color)
                         .lowerColor(lowerThemeColor)
                     
                     // 入力ボタン
@@ -65,12 +68,12 @@ struct TapInputView: View {
                                     self.upperVal = val
                                 }
                                 .frame(width: colWidth, height: rowHeight)
-                                .background(upperBackColor)
+                                .background(color)
                                 .cornerRadius(commonRadius)
                             }
                         }
                         .font(Font.system(size: 24))
-                        .foregroundColor(upperForeColor)
+                        .foregroundColor(Color.white)
                         VStack(alignment: .center, spacing: commonSpacing ){
                             ForEach(col1.indices){i in
                                 let label = "\(col1[i])"
@@ -115,14 +118,10 @@ struct TapInputView: View {
                     // 登録ボタン
                     PostView(Double(upperVal) + Double(lowerVal)/10, repo: repo){(success, error) in
                         // completion
-                        
                         self.error = error
-                        
-                        
                     }
                     .font(Font.system(size: 24))
                     .frame(width: g.size.width * 0.66, alignment: .center)
-                    .padding()
                     .background(Color.blue)
                     .foregroundColor(Color.white)
                     .cornerRadius(commonRadius)
