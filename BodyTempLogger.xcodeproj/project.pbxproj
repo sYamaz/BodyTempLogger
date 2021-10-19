@@ -18,6 +18,7 @@
 		5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC63482712EB330059A726 /* HealthKit.framework */; };
 		93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E54271CDCB6008E7135 /* DisplayView.swift */; };
 		93D14C41271F820F002DDFFA /* BodyTemperatureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */; };
+		93D14C43271F8332002DDFFA /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D14C42271F8332002DDFFA /* ErrorMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BodyTempLogger--iOS--Info.plist"; sourceTree = "<group>"; };
 		93285E54271CDCB6008E7135 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTemperatureUnit.swift; sourceTree = "<group>"; };
+		93D14C42271F8332002DDFFA /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				5F4242A72715B8DF00AB464A /* TapInputView.swift */,
 				5F4242AA2715B8FF00AB464A /* PostView.swift */,
 				93285E54271CDCB6008E7135 /* DisplayView.swift */,
+				93D14C42271F8332002DDFFA /* ErrorMessageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
 				5FAC63332712E8120059A726 /* ContentView.swift in Sources */,
 				5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */,
+				93D14C43271F8332002DDFFA /* ErrorMessageView.swift in Sources */,
 				5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */,
 				93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */,
 				93D14C41271F820F002DDFFA /* BodyTemperatureUnit.swift in Sources */,

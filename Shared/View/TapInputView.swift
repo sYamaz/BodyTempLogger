@@ -132,13 +132,7 @@ struct TapInputView: View {
             
             
             
-            VStack(alignment: .trailing, spacing: nil){
-                if let e = error {
-                    let errorTxt = "\(e)"
-                    Text(errorTxt)
-                        .padding()
-                }
-            }
+            ErrorMessageView(self.error)
         }
     }
 }
