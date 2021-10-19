@@ -3,13 +3,6 @@
 import Foundation
 import HealthKit
 
-enum BodyTemperatureUnit{
-    /// 摂氏
-    case degreeCelsius
-    /// 華氏
-    case degreeFahrenheit
-}
-
 protocol HealthCareRepositoryDelegate{
     
     func setup() -> Bool
