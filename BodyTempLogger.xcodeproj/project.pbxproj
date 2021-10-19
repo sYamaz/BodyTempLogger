@@ -8,28 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */; };
-		5F4242A32715AF0D00AB464A /* HealthCareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */; };
-		5F4242A52715B7FE00AB464A /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */; };
-		5F4242A62715B7FE00AB464A /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */; };
 		5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A72715B8DF00AB464A /* TapInputView.swift */; };
-		5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242A72715B8DF00AB464A /* TapInputView.swift */; };
 		5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
-		5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4242AA2715B8FF00AB464A /* PostView.swift */; };
 		5FAC63222712E8120059A726 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63212712E8120059A726 /* Tests_iOS.swift */; };
 		5FAC63242712E8120059A726 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63232712E8120059A726 /* Tests_iOSLaunchTests.swift */; };
-		5FAC632E2712E8120059A726 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC632D2712E8120059A726 /* Tests_macOS.swift */; };
-		5FAC63302712E8120059A726 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC632F2712E8120059A726 /* Tests_macOSLaunchTests.swift */; };
 		5FAC63312712E8120059A726 /* BodyTempLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */; };
-		5FAC63322712E8120059A726 /* BodyTempLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */; };
 		5FAC63332712E8120059A726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC630A2712E80B0059A726 /* ContentView.swift */; };
-		5FAC63342712E8120059A726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC630A2712E80B0059A726 /* ContentView.swift */; };
 		5FAC63352712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
-		5FAC63362712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
 		5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC63482712EB330059A726 /* HealthKit.framework */; };
-		93285E52271CDC83008E7135 /* DragInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E51271CDC83008E7135 /* DragInputView.swift */; };
-		93285E53271CDC83008E7135 /* DragInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E51271CDC83008E7135 /* DragInputView.swift */; };
 		93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E54271CDCB6008E7135 /* DisplayView.swift */; };
-		93285E56271CDCB6008E7135 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E54271CDCB6008E7135 /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,37 +27,23 @@
 			remoteGlobalIDString = 5FAC630F2712E8120059A726;
 			remoteInfo = "BodyTempLogger (iOS)";
 		};
-		5FAC632A2712E8120059A726 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5FAC63042712E80A0059A726 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5FAC63152712E8120059A726;
-			remoteInfo = "BodyTempLogger (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareRepository.swift; sourceTree = "<group>"; };
-		5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputView.swift; sourceTree = "<group>"; };
 		5F4242A72715B8DF00AB464A /* TapInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapInputView.swift; sourceTree = "<group>"; };
 		5F4242AA2715B8FF00AB464A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTempLoggerApp.swift; sourceTree = "<group>"; };
 		5FAC630A2712E80B0059A726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FAC630B2712E8110059A726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FAC63102712E8120059A726 /* BodyTempLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyTempLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAC63162712E8120059A726 /* BodyTempLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyTempLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAC63182712E8120059A726 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		5FAC631D2712E8120059A726 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAC63212712E8120059A726 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		5FAC63232712E8120059A726 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		5FAC63292712E8120059A726 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAC632D2712E8120059A726 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		5FAC632F2712E8120059A726 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		5FAC63452712E89B0059A726 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5FAC63462712EB320059A726 /* BodyTempLogger (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BodyTempLogger (iOS).entitlements"; sourceTree = "<group>"; };
 		5FAC63482712EB330059A726 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BodyTempLogger--iOS--Info.plist"; sourceTree = "<group>"; };
-		93285E51271CDC83008E7135 /* DragInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragInputView.swift; sourceTree = "<group>"; };
 		93285E54271CDCB6008E7135 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,21 +56,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FAC63132712E8120059A726 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FAC631A2712E8120059A726 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FAC63262712E8120059A726 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -114,9 +73,7 @@
 				5FAC63462712EB320059A726 /* BodyTempLogger (iOS).entitlements */,
 				5FAC63452712E89B0059A726 /* README.md */,
 				5FAC63082712E80B0059A726 /* Shared */,
-				5FAC63172712E8120059A726 /* macOS */,
 				5FAC63202712E8120059A726 /* Tests iOS */,
-				5FAC632C2712E8120059A726 /* Tests macOS */,
 				5FAC63112712E8120059A726 /* Products */,
 				5FAC63472712EB330059A726 /* Frameworks */,
 			);
@@ -129,8 +86,6 @@
 				93285E4F271CDBBA008E7135 /* Model */,
 				5FAC63092712E80B0059A726 /* BodyTempLoggerApp.swift */,
 				5F4242A72715B8DF00AB464A /* TapInputView.swift */,
-				93285E51271CDC83008E7135 /* DragInputView.swift */,
-				5F4242A42715B7FE00AB464A /* KeyboardInputView.swift */,
 				5FAC630A2712E80B0059A726 /* ContentView.swift */,
 				5FAC630B2712E8110059A726 /* Assets.xcassets */,
 			);
@@ -141,19 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				5FAC63102712E8120059A726 /* BodyTempLogger.app */,
-				5FAC63162712E8120059A726 /* BodyTempLogger.app */,
 				5FAC631D2712E8120059A726 /* Tests iOS.xctest */,
-				5FAC63292712E8120059A726 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5FAC63172712E8120059A726 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				5FAC63182712E8120059A726 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		5FAC63202712E8120059A726 /* Tests iOS */ = {
@@ -163,15 +108,6 @@
 				5FAC63232712E8120059A726 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		5FAC632C2712E8120059A726 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				5FAC632D2712E8120059A726 /* Tests_macOS.swift */,
-				5FAC632F2712E8120059A726 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		5FAC63472712EB330059A726 /* Frameworks */ = {
@@ -219,23 +155,6 @@
 			productReference = 5FAC63102712E8120059A726 /* BodyTempLogger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5FAC63152712E8120059A726 /* BodyTempLogger (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FAC633C2712E8120059A726 /* Build configuration list for PBXNativeTarget "BodyTempLogger (macOS)" */;
-			buildPhases = (
-				5FAC63122712E8120059A726 /* Sources */,
-				5FAC63132712E8120059A726 /* Frameworks */,
-				5FAC63142712E8120059A726 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BodyTempLogger (macOS)";
-			productName = "BodyTempLogger (macOS)";
-			productReference = 5FAC63162712E8120059A726 /* BodyTempLogger.app */;
-			productType = "com.apple.product-type.application";
-		};
 		5FAC631C2712E8120059A726 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FAC633F2712E8120059A726 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -254,24 +173,6 @@
 			productReference = 5FAC631D2712E8120059A726 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		5FAC63282712E8120059A726 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FAC63422712E8120059A726 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				5FAC63252712E8120059A726 /* Sources */,
-				5FAC63262712E8120059A726 /* Frameworks */,
-				5FAC63272712E8120059A726 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5FAC632B2712E8120059A726 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 5FAC63292712E8120059A726 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,16 +186,9 @@
 					5FAC630F2712E8120059A726 = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					5FAC63152712E8120059A726 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					5FAC631C2712E8120059A726 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 5FAC630F2712E8120059A726;
-					};
-					5FAC63282712E8120059A726 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 5FAC63152712E8120059A726;
 					};
 				};
 			};
@@ -312,9 +206,7 @@
 			projectRoot = "";
 			targets = (
 				5FAC630F2712E8120059A726 /* BodyTempLogger (iOS) */,
-				5FAC63152712E8120059A726 /* BodyTempLogger (macOS) */,
 				5FAC631C2712E8120059A726 /* Tests iOS */,
-				5FAC63282712E8120059A726 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -328,22 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FAC63142712E8120059A726 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FAC63362712E8120059A726 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FAC631B2712E8120059A726 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FAC63272712E8120059A726 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,27 +236,10 @@
 			files = (
 				5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
 				5FAC63332712E8120059A726 /* ContentView.swift in Sources */,
-				5F4242A52715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
 				5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */,
 				5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */,
 				93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */,
 				5FAC63312712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
-				93285E52271CDC83008E7135 /* DragInputView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5FAC63122712E8120059A726 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F4242A32715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
-				5FAC63342712E8120059A726 /* ContentView.swift in Sources */,
-				5F4242A62715B7FE00AB464A /* KeyboardInputView.swift in Sources */,
-				5F4242A92715B8DF00AB464A /* TapInputView.swift in Sources */,
-				5F4242AC2715B8FF00AB464A /* PostView.swift in Sources */,
-				93285E56271CDCB6008E7135 /* DisplayView.swift in Sources */,
-				5FAC63322712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
-				93285E53271CDC83008E7135 /* DragInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,15 +252,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FAC63252712E8120059A726 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FAC63302712E8120059A726 /* Tests_macOSLaunchTests.swift in Sources */,
-				5FAC632E2712E8120059A726 /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -408,11 +259,6 @@
 			isa = PBXTargetDependency;
 			target = 5FAC630F2712E8120059A726 /* BodyTempLogger (iOS) */;
 			targetProxy = 5FAC631E2712E8120059A726 /* PBXContainerItemProxy */;
-		};
-		5FAC632B2712E8120059A726 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5FAC63152712E8120059A726 /* BodyTempLogger (macOS) */;
-			targetProxy = 5FAC632A2712E8120059A726 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -597,62 +443,6 @@
 			};
 			name = Release;
 		};
-		5FAC633D2712E8120059A726 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TQT3P76FPL;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sY.BodyTempLogger;
-				PRODUCT_NAME = BodyTempLogger;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		5FAC633E2712E8120059A726 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TQT3P76FPL;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sY.BodyTempLogger;
-				PRODUCT_NAME = BodyTempLogger;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		5FAC63402712E8120059A726 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -704,56 +494,6 @@
 			};
 			name = Release;
 		};
-		5FAC63432712E8120059A726 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TQT3P76FPL;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sY.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "BodyTempLogger (macOS)";
-			};
-			name = Debug;
-		};
-		5FAC63442712E8120059A726 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TQT3P76FPL;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sY.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "BodyTempLogger (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -775,29 +515,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FAC633C2712E8120059A726 /* Build configuration list for PBXNativeTarget "BodyTempLogger (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FAC633D2712E8120059A726 /* Debug */,
-				5FAC633E2712E8120059A726 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5FAC633F2712E8120059A726 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FAC63402712E8120059A726 /* Debug */,
 				5FAC63412712E8120059A726 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5FAC63422712E8120059A726 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FAC63432712E8120059A726 /* Debug */,
-				5FAC63442712E8120059A726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
