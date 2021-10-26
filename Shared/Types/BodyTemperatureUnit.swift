@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum BodyTemperatureUnit{
+enum BodyTemperatureUnit: Codable{
     /// 摂氏
     case degreeCelsius
     /// 華氏

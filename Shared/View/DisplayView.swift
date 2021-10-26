@@ -8,31 +8,30 @@
 import SwiftUI
 
 extension DisplayView{
-    private init(upperVal:Int, lowerVal:Int, upperColor:Color, lowerColor:Color){
-        self.upperVal = upperVal
-        self.lowerVal = lowerVal
+    private init(vm:DisplayViewModel, upperColor:Color, lowerColor:Color){
+        self.vm = vm
         self.upperValueColor = upperColor
         self.lowerValueColor = lowerColor
     }
     
     func upperColor(_ color:Color) -> Self{
-        return DisplayView(upperVal: self.upperVal, lowerVal: self.lowerVal, upperColor: color, lowerColor: self.lowerValueColor)
+        return DisplayView(vm: self.vm, upperColor: color, lowerColor: self.lowerValueColor)
     }
     
     func lowerColor(_ color:Color) -> Self{
-        return DisplayView(upperVal: self.upperVal, lowerVal: self.lowerVal, upperColor: self.upperValueColor, lowerColor: color)
+        return DisplayView(vm: self.vm, upperColor: self.upperValueColor, lowerColor: color)
     }
 }
 
 struct DisplayView: View {
-    let upperVal:Int
-    let lowerVal:Int
-    let upperValueColor:Color
-    let lowerValueColor:Color
     
-    init(upperVal:Int, lowerVal:Int){
-        self.upperVal = upperVal
-        self.lowerVal = lowerVal
+    private let upperValueColor:Color
+    private let lowerValueColor:Color
+    
+    @ObservedObject private var vm:DisplayViewModel
+    
+    init(vm:DisplayViewModel){
+        self.vm = vm
         
         self.upperValueColor = Color.primary
         self.lowerValueColor = Color.primary
@@ -41,9 +40,9 @@ struct DisplayView: View {
     var body: some View {
         // 表示
         HStack(alignment: .firstTextBaseline, spacing: 4){
-            Text("\(upperVal).")
+            Text("\(vm.temp.higher).")
                 .foregroundColor(upperValueColor)
-            Text("\(lowerVal)")
+            Text("\(vm.temp.lower)")
                 .foregroundColor(lowerValueColor)
             Text("℃").font(Font.system(size: 48))
         }.font(Font.system(size: 80))
@@ -52,7 +51,7 @@ struct DisplayView: View {
 
 struct DisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        DisplayView(upperVal: 36, lowerVal: 5)
+        DisplayView(vm: .init(repo: PreviewHealthCareRepository(), store: .init(.init(lower: 5, higher: 36))))
             .upperColor(Color.red)
             .lowerColor(Color.blue)
     }

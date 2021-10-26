@@ -17,8 +17,18 @@
 		5FAC63352712E8120059A726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAC630B2712E8110059A726 /* Assets.xcassets */; };
 		5FAC63492712EB330059A726 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC63482712EB330059A726 /* HealthKit.framework */; };
 		93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93285E54271CDCB6008E7135 /* DisplayView.swift */; };
+		939B86552720CDC900C58051 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B86542720CDC900C58051 /* Preference.swift */; };
+		939B86572720CE9400C58051 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B86562720CE9400C58051 /* ThemeColor.swift */; };
+		939B86592720D18200C58051 /* CelsiusRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B86582720D18200C58051 /* CelsiusRange.swift */; };
+		939B865B2720D28500C58051 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B865A2720D28500C58051 /* Temperature.swift */; };
+		939B865D2720D38300C58051 /* DisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B865C2720D38300C58051 /* DisplayViewModel.swift */; };
 		93D14C41271F820F002DDFFA /* BodyTemperatureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */; };
 		93D14C43271F8332002DDFFA /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D14C42271F8332002DDFFA /* ErrorMessageView.swift */; };
+		93D3FB06272220A0007394F9 /* PreferenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3FB05272220A0007394F9 /* PreferenceStore.swift */; };
+		93D3FB0827222109007394F9 /* TemperatureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3FB0727222109007394F9 /* TemperatureStore.swift */; };
+		93D3FB0A27222496007394F9 /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3FB0927222496007394F9 /* InputViewModel.swift */; };
+		93D3FB0C272226A8007394F9 /* PreferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3FB0B272226A8007394F9 /* PreferenceViewModel.swift */; };
+		93D3FB0E27222756007394F9 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D3FB0D27222756007394F9 /* MenuBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +57,18 @@
 		5FAC63482712EB330059A726 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		5FAC634A271304C60059A726 /* BodyTempLogger--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BodyTempLogger--iOS--Info.plist"; sourceTree = "<group>"; };
 		93285E54271CDCB6008E7135 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		939B86542720CDC900C58051 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		939B86562720CE9400C58051 /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		939B86582720D18200C58051 /* CelsiusRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiusRange.swift; sourceTree = "<group>"; };
+		939B865A2720D28500C58051 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		939B865C2720D38300C58051 /* DisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewModel.swift; sourceTree = "<group>"; };
 		93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTemperatureUnit.swift; sourceTree = "<group>"; };
 		93D14C42271F8332002DDFFA /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
+		93D3FB05272220A0007394F9 /* PreferenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceStore.swift; sourceTree = "<group>"; };
+		93D3FB0727222109007394F9 /* TemperatureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureStore.swift; sourceTree = "<group>"; };
+		93D3FB0927222496007394F9 /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		93D3FB0B272226A8007394F9 /* PreferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewModel.swift; sourceTree = "<group>"; };
+		93D3FB0D27222756007394F9 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +106,7 @@
 		5FAC63082712E80B0059A726 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				93D3FB0427222062007394F9 /* Types */,
 				93D14C3C271F80A8002DDFFA /* ViewModel */,
 				93285E50271CDBED008E7135 /* View */,
 				93285E4F271CDBBA008E7135 /* Model */,
@@ -125,8 +146,9 @@
 		93285E4F271CDBBA008E7135 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				939B86612720D67900C58051 /* Store */,
+				939B86602720D62500C58051 /* ValueObject */,
 				5F4242A12715AF0D00AB464A /* HealthCareRepository.swift */,
-				93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4242A72715B8DF00AB464A /* TapInputView.swift */,
+				93D3FB0D27222756007394F9 /* MenuBarView.swift */,
 				5F4242AA2715B8FF00AB464A /* PostView.swift */,
 				93285E54271CDCB6008E7135 /* DisplayView.swift */,
 				93D14C42271F8332002DDFFA /* ErrorMessageView.swift */,
@@ -142,11 +165,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		939B86602720D62500C58051 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				939B86542720CDC900C58051 /* Preference.swift */,
+				939B865A2720D28500C58051 /* Temperature.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		939B86612720D67900C58051 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				93D3FB05272220A0007394F9 /* PreferenceStore.swift */,
+				93D3FB0727222109007394F9 /* TemperatureStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		93D14C3C271F80A8002DDFFA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				939B865C2720D38300C58051 /* DisplayViewModel.swift */,
+				93D3FB0927222496007394F9 /* InputViewModel.swift */,
+				93D3FB0B272226A8007394F9 /* PreferenceViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93D3FB0427222062007394F9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				93D14C40271F820F002DDFFA /* BodyTemperatureUnit.swift */,
+				939B86582720D18200C58051 /* CelsiusRange.swift */,
+				939B86562720CE9400C58051 /* ThemeColor.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,14 +302,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939B86552720CDC900C58051 /* Preference.swift in Sources */,
 				5F4242A22715AF0D00AB464A /* HealthCareRepository.swift in Sources */,
+				93D3FB0827222109007394F9 /* TemperatureStore.swift in Sources */,
 				5FAC63332712E8120059A726 /* ContentView.swift in Sources */,
 				5F4242A82715B8DF00AB464A /* TapInputView.swift in Sources */,
+				939B865D2720D38300C58051 /* DisplayViewModel.swift in Sources */,
 				93D14C43271F8332002DDFFA /* ErrorMessageView.swift in Sources */,
 				5F4242AB2715B8FF00AB464A /* PostView.swift in Sources */,
+				939B86592720D18200C58051 /* CelsiusRange.swift in Sources */,
+				93D3FB0E27222756007394F9 /* MenuBarView.swift in Sources */,
+				93D3FB06272220A0007394F9 /* PreferenceStore.swift in Sources */,
+				93D3FB0C272226A8007394F9 /* PreferenceViewModel.swift in Sources */,
 				93285E55271CDCB6008E7135 /* DisplayView.swift in Sources */,
+				93D3FB0A27222496007394F9 /* InputViewModel.swift in Sources */,
+				939B865B2720D28500C58051 /* Temperature.swift in Sources */,
 				93D14C41271F820F002DDFFA /* BodyTemperatureUnit.swift in Sources */,
 				5FAC63312712E8120059A726 /* BodyTempLoggerApp.swift in Sources */,
+				939B86572720CE9400C58051 /* ThemeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
