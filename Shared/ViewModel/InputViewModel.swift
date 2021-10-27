@@ -38,13 +38,15 @@ class InputViewModel: ObservableObject, SubmitViewModelDelegate, InputTemperatur
     @Published private (set) var preference:Preference
     private let temperatureStore:TemperatureStore
     private let repo:HealthCareRepositoryDelegate
-    private var cancellable:AnyCancellable? = nil
+    private var subscriptions = Set<AnyCancellable>()
     init(temperatureStore:TemperatureStore, preferenceStore:PreferenceStore, repo:HealthCareRepositoryDelegate){
         self.preference = preferenceStore.value
         self.temperatureStore = temperatureStore
         self.repo = repo
         // return cancellable object
-        self.cancellable = preferenceStore.$value.sink(receiveValue: {v in self.preference = v})
+        preferenceStore.$value
+                       .sink(receiveValue: {v in self.preference = v})
+                       .store(in: &subscriptions)
     }
     
     func updateLower(_ val:Int) -> Void{

@@ -10,12 +10,15 @@ import Combine
 class PreferenceViewModel: ObservableObject{
     @Published private (set) var preference:Preference
     private let store:PreferenceStore
-    private var cancellable:AnyCancellable? = nil
+    private var subscriptions = Set<AnyCancellable>()
     init(store: PreferenceStore){
         self.store = store
         self.preference = store.value
         
-        self.cancellable = store.$value.sink(receiveValue: {v in self.preference = v})
+        store.$value
+             .sink(receiveValue: {v in self.preference = v})
+             .store(in: &subscriptions)
+                
     }
     
     func changeCelsiusRange(_ range:CelsiusRange) -> Void{

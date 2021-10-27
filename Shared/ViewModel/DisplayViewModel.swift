@@ -10,14 +10,16 @@ import Combine
 class DisplayViewModel: ObservableObject{
     private let healthCareRepository: HealthCareRepositoryDelegate
     @Published private (set) var temp:Temperature
-    
-    private var cancellable:AnyCancellable? = nil
+
+    private var subscriptions = Set<AnyCancellable>()
     
     init(repo:HealthCareRepositoryDelegate, store:TemperatureStore) {
         self.healthCareRepository = repo
         self.temp = store.value
         
-        self.cancellable = store.$value.sink(receiveValue: {t in self.temp = t})
+        store.$value
+             .sink(receiveValue: {t in self.temp = t})
+             .store(in: &subscriptions)
         // こっちはコンストラクタ抜けると破棄されてしまう感じ
         //let _ = store.sub.sink(receiveValue: {t in self.update(t)})
     }
